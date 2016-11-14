@@ -13,3 +13,5 @@ hs_err_pid*
 .idea
 pageviews-*.gz
 .DS_Store
+build/
+target/

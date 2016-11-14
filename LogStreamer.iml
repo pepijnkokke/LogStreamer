@@ -29,5 +29,6 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:3.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.191" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:5.0.3" level="project" />
   </component>
 </module>

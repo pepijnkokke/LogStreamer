@@ -1,4 +1,4 @@
-package ds.top10;
+package ds.logstreamer;
 
 
 import org.apache.ignite.Ignite;
@@ -10,25 +10,19 @@ import org.apache.ignite.stream.StreamTransformer;
 
 import javax.cache.processor.EntryProcessorException;
 import javax.cache.processor.MutableEntry;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.zip.GZIPInputStream;
 
 public class StreamPageViews {
-    public static void main(String[] args) throws Exception {
+    public static void from(String config, File file) throws IOException {
         // Mark this cluster member as client.
         Ignition.setClientMode(true);
 
-        try (Ignite ignite = Ignition.start()) {
+        try (Ignite ignite = (config == null) ? Ignition.start() : Ignition.start(config)) {
             IgniteCache<String, Long> stmCache = ignite.getOrCreateCache(CacheConfig.pageviewCache());
 
             // Create a streamer to stream words into the cache.
             try (IgniteDataStreamer<String, Long> stmr = ignite.dataStreamer(stmCache.getName())) {
-                // Allow data updates.
-                stmr.allowOverwrite(true);
-
                 // Configure data transformation to count instances of the same word.
                 stmr.receiver(StreamTransformer.from(
                         new CacheEntryProcessor<String,Long,Object>() {
@@ -46,7 +40,7 @@ public class StreamPageViews {
                 ));
 
                 // Stream pageviews from a file.
-                InputStream fileStream = new FileInputStream(args[0]);
+                InputStream fileStream = new FileInputStream(file);
                 InputStream gzipStream = new GZIPInputStream(fileStream);
                 InputStreamReader decoder = new InputStreamReader(gzipStream, "UTF-8");
                 BufferedReader reader = new BufferedReader(decoder);

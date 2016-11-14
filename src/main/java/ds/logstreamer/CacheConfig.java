@@ -1,4 +1,4 @@
-package ds.top10;
+package ds.logstreamer;
 
 
 import org.apache.ignite.configuration.CacheConfiguration;
