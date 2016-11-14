@@ -57,7 +57,7 @@ if [ "$1" == "partC" ]; then
     java -jar "$JAR" --stream-from="$2" --site=".b" >/dev/null &
     java -jar "$JAR" --stream-from="$3" --site=".b" >/dev/null &
     java -jar "$JAR" --stream-from="$4" --site=".b" >/dev/null &
-    java -jar "$JAR" --query-every=10000 > "$LOGC"
+    java -jar "$JAR" --query-every=0 > "$LOGC"
     exit 0
 
 fi
