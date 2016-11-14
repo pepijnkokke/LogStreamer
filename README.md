@@ -26,6 +26,9 @@ Specifically, I am using:
  1. <https://dumps.wikimedia.org/other/pageviews/2016/2016-10/pageviews-20161001-010000.gz>
  2. <https://dumps.wikimedia.org/other/pageviews/2016/2016-10/pageviews-20161001-020000.gz>
 
+I didn't use many sources, but I if I should cite anything, it's the
+docs for Ignite: <https://apacheignite.readme.io/docs>.
+
 If you care about which XML config file Ignite uses, then there is a
 `--config=` option built into the executable JAR file (see `run.sh`).
 Make sure that you've set `IGNITE_HOME` if you want to have any chance
