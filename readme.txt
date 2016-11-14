@@ -20,5 +20,5 @@ Things that you should know if you are marking this assignment:
   If you care about which XML config file Ignite uses, then there is a
   `--config` option built into the executable JAR file (see run.sh).
   Make sure that you've set IGNITE_HOME if you want to have any chance
-  to find your config file, though... I've done no such thing.
+  of it finding your config file, though...
   
