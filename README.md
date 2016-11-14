@@ -33,4 +33,4 @@ note in `part C` should do the same as the one in `part B`. This it
 does too. But I do have my doubts, because _continuously_ is often,
 so just in case, you can easily edit this in run.sh (`--query-every=`).
 
-And yes. Adding an image was necessary.
+And yes, adding an image was necessary.
