@@ -1,12 +1,15 @@
-![Fishermen on a Log Raft](https://github.com/pepijnkokke/LogStreamer/raw/master/logo.jpg)
-
 # Distributed Systems – LogStreamer 1.0
+
+![Fishermen on a Log Raft](https://github.com/pepijnkokke/LogStreamer/raw/master/logo.jpg)
 
 ### If you are just browsing this repository...
 
 It's just homework, nothing interesting to see here.
 
 ### If you are marking this assignment...
+
+There are a couple ways in which my submission is slightly different
+from what was described in the assignment:
 
 I've used `src` instead of `source`, because it tends to make Maven
 and IntelliJ Idea happier when I do this. The top-level folder is my
@@ -35,4 +38,4 @@ note in `part C` should do the same as the one in `part B`. This it
 does too. But I do have my doubts, because _continuously_ is often,
 so just in case, you can easily edit this in run.sh (`--query-every=`).
 
-Yes. Adding an image was necessary.
+And yes, adding an image was necessary.
