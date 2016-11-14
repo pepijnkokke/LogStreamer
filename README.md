@@ -1,6 +1,6 @@
 # Distributed Systems – LogStreamer 1.0
 
-![Fishermen on a Log Raft](https://goo.gl/fWBQk4)
+![Fishermen on a Log Raft](https://github.com/pepijnkokke/LogStreamer/raw/master/logo.jpg)
 
 ### If you are just browsing this repository...
 
@@ -19,7 +19,7 @@ gzipped files taken directly from:
 <https://dumps.wikimedia.org/other/pageviews/2016/2016-10/>
 
 If you care about which XML config file Ignite uses, then there is a
-`--config` option built into the executable JAR file (see `run.sh`).
+`--config=` option built into the executable JAR file (see `run.sh`).
 Make sure that you've set `IGNITE_HOME` if you want to have any chance
 of it finding your config file, though...
   
