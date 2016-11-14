@@ -1,0 +1,107 @@
+[02:01:24] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+[02:01:25]    __________  ________________ 
+[02:01:25]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[02:01:25]  _/ // (7 7    // /  / / / _/   
+[02:01:25] /___/\___/_/|_/___/ /_/ /___/  
+[02:01:25] 
+[02:01:25] ver. 1.7.0#20160801-sha1:383273e3
+[02:01:25] 2016 Copyright(C) Apache Software Foundation
+[02:01:25] 
+[02:01:25] Ignite documentation: http://ignite.apache.org
+[02:01:25] 
+[02:01:25] Quiet mode.
+[02:01:25]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[02:01:25] 
+[02:01:25] OS: Linux 3.10.0-327.36.3.el7.x86_64 amd64
+[02:01:25] VM information: Java(TM) SE Runtime Environment 1.8.0_91-b14 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.91-b14
+[02:01:25] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[02:01:25] Configured plugins:
+[02:01:25]   ^-- None
+[02:01:25] 
+[02:01:26] Security status [authentication=off, tls/ssl=off]
+[02:01:30] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[02:01:30] 
+[02:01:30] Ignite node started OK (id=74607930)
+[02:01:30] Topology snapshot [ver=3, servers=1, clients=2, CPUs=4, heap=10.0GB]
+1479088900:67747:Wikipedia:Hauptseite
+1479088900:2312:Silent_Hill_(Film)
+1479088900:501:Sophia_Thomalla
+1479088900:410:Jean-Claude_Van_Damme
+1479088900:406:The_Green_Mile_(Film)
+1479088900:374:Laurie_Holden
+1479088900:328:Silent_Hill
+1479088900:327:Silent_Hill:_Revelation_3D
+1479088900:262:Pablo_Escobar
+1479088900:260:Michael_Clarke_Duncan
+1479088911:6653:Lali_Espósito
+1479088911:2854:La7
+1479088911:1180:Khutulun
+1479088911:1016:Kiefer_Sutherland
+1479088911:941:Joseph_Stalin
+1479088911:836:Jessica_Jones
+1479088911:786:Joseph_stalin
+1479088911:768:Jessica_Jones_(TV_series)
+1479088911:639:José_Fernández_(pitcher)
+1479088911:480:Killing_of_Harambe
+1479088921:1295:Special:Search
+1479088921:1002:LaTeX/Document_Structure
+1479088921:978:Wiktionary:Main_Page
+1479088921:747:Special:CreateAccount
+1479088921:645:Westworld_(TV_series)
+1479088921:515:XHamster
+1479088921:506:Wiki
+1479088921:431:Westworld
+1479088921:418:Wikipedia
+1479088921:416:YouTube
+1479088931:3770:Misty_Knight
+1479088931:3135:Pablo_Escobar
+1479088931:2117:Murder_of_Meredith_Kercher
+1479088931:1977:Mike_Colter
+1479088931:1177:Murder_of_JonBenét_Ramsey
+1479088931:1077:Pat_Sajak
+1479088931:963:O._J._Simpson
+1479088931:776:Narcos
+1479088931:693:Penn_&_Teller
+1479088931:661:Nike,_Inc.
+1479088941:14261:-
+1479088941:9468:Wikipedia:Portada
+1479088941:688:Amparo_Valle
+1479088941:318:Along_Came_a_Spider
+1479088941:296:Ana_María_Orozco
+1479088941:279:Alicia_Machado
+1479088941:275:Aerosmith
+1479088941:272:True_Blood
+1479088941:272:Archivo:Hippocrates_pushkin02.jpg
+1479088941:245:Adolf_Hitler
+1479088951:10118:Template:AdvancedSiteNotices/ajax
+1479088951:4480:Sejarah_Jepang
+1479088951:1992:Halaman_Utama
+1479088951:1157:Daftar_hari_penting_di_Indonesia
+1479088951:1090:-
+1479088951:790:Istimewa:Pencarian
+1479088951:523:1_Oktober
+1479088951:352:Gerakan_30_September
+1479088951:331:Marwah_Daud_Ibrahim
+1479088951:222:Bernardo_Caprotti
+1479088961:7637:Hoofdpagina
+1479088961:348:Speciaal:Zoeken
+1479088961:263:Lijst_van_Intel-processors
+1479088961:247:Main_Page
+1479088961:173:Robert_Moszkowicz
+1479088961:168:Max_Moszkowicz_sr.
+1479088961:164:Тусгай:Search
+1479088961:136:Special:MyPage/zeusmodepreferences.js
+1479088961:134:Privacy_policy/es
+1479088961:134:Speciaal:Aanmelden
+1479088971:4974:Portal:Huvudsida
+1479088971:1303:Главна_страна
+1479088971:227:Glavna_stran
+1479088971:210:Special:Sök
+1479088971:187:Ed_och_Lorraine_Warren
+1479088971:173:Korsnäs
+1479088971:164:Maria_Sharapova
+1479088971:164:Arctic_Ocean
+1479088971:162:The_Conjuring
+1479088971:134:Anton_Rubinstein
+[02:02:54] Topology snapshot [ver=4, servers=1, clients=1, CPUs=4, heap=6.9GB]
+[02:04:40] Ignite node stopped OK [uptime=00:03:10:265]
