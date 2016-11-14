@@ -16,6 +16,7 @@ public class Main {
         {{
             accepts("serve", "Start Ignite server");
             accepts("stream-from", "Start data streamer from [file]").withRequiredArg().ofType(File.class).describedAs("file");
+            accepts("site", "Filter streamer by site").withRequiredArg().describedAs("site");
             accepts("query-every", "Query Ignite cache every [millis]").withRequiredArg().ofType(Long.class).describedAs("millis");
             accepts("config", "Set Ignite config file to [config]").withRequiredArg().ofType(File.class).describedAs("config");
         }};
@@ -34,7 +35,7 @@ public class Main {
             }
         }
         else if (options.has("stream-from")) {
-            StreamPageViews.from(config, (File) options.valueOf("stream-from"));
+            StreamPageViews.from(config, (File) options.valueOf("stream-from"), (String) options.valueOf("filter"));
         }
         else if (options.has("query-every")) {
             QueryPageViews.every(config, (Long) options.valueOf("query-every"));

@@ -14,7 +14,7 @@ import java.io.*;
 import java.util.zip.GZIPInputStream;
 
 public class StreamPageViews {
-    public static void from(String config, File file) throws IOException {
+    public static void from(String config, File file, String siteFilter) throws IOException {
         // Mark this cluster member as client.
         Ignition.setClientMode(true);
 
@@ -23,6 +23,10 @@ public class StreamPageViews {
 
             // Create a streamer to stream words into the cache.
             try (IgniteDataStreamer<String, Long> stmr = ignite.dataStreamer(stmCache.getName())) {
+
+                // Allow overwriting.
+                stmr.allowOverwrite(true);
+
                 // Configure data transformation to count instances of the same word.
                 stmr.receiver(StreamTransformer.from(
                         new CacheEntryProcessor<String,Long,Object>() {
@@ -48,7 +52,13 @@ public class StreamPageViews {
                     String line;
                     while ((line = reader.readLine()) != null) {
                         String[] parts = line.split(" ");
-                        stmr.addData(parts[1], Long.parseLong(parts[2]));
+
+                        // Skip by site filter
+                        if (siteFilter == null || parts[0].endsWith(siteFilter)) {
+
+                            // Add data to streamer
+                            stmr.addData(parts[1], Long.parseLong(parts[2]));
+                        }
                     }
                 }
                 finally {
