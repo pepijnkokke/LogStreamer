@@ -22,3 +22,9 @@ Things that you should know if you are marking this assignment:
   Make sure that you've set IGNITE_HOME if you want to have any chance
   of it finding your config file, though...
   
+  Right. Last few things. The assignment specifies that the query node
+  in `part A` should check every 10 seconds, which it does. The query
+  note in `part B` should check _continuously_, which it does. The query
+  note in `part C` should do the same as the one in `part B`. This it
+  does too. But I do have my doubts, because _continuously_ is often,
+  so just in case, you can easily edit this in run.sh (--query-every=).
