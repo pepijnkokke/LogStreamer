@@ -1,6 +1,6 @@
-# Distributed Systems – LogStreamer 1.0
+![Fishermen on a Log Raft](https://github.com/pepijnkokke/LogStreamer/raw/master/logo.jpg)
 
-![Fishermen on a Log Raft](https://goo.gl/fWBQk4)
+# Distributed Systems – LogStreamer 1.0
 
 ### If you are just browsing this repository...
 
@@ -19,7 +19,7 @@ gzipped files taken directly from:
 <https://dumps.wikimedia.org/other/pageviews/2016/2016-10/>
 
 If you care about which XML config file Ignite uses, then there is a
-`--config` option built into the executable JAR file (see `run.sh`).
+`--config=` option built into the executable JAR file (see `run.sh`).
 Make sure that you've set `IGNITE_HOME` if you want to have any chance
 of it finding your config file, though...
   
@@ -29,3 +29,5 @@ note in `part B` should check _continuously_, which it does. The query
 note in `part C` should do the same as the one in `part B`. This it
 does too. But I do have my doubts, because _continuously_ is often,
 so just in case, you can easily edit this in run.sh (`--query-every=`).
+
+Yes. Adding an image was necessary.
