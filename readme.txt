@@ -16,3 +16,9 @@ Things that you should know if you are marking this assignment:
   option is that you are using plain text files, where I am using the
   gzipped files taken directly from:
   https://dumps.wikimedia.org/other/pageviews/2016/2016-10/
+
+  If you care about which XML config file Ignite uses, then there is a
+  `--config` option built into the executable JAR file (see run.sh).
+  Make sure that you've set IGNITE_HOME if you want to have any chance
+  to find your config file, though... I've done no such thing.
+  
