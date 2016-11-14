@@ -1,6 +1,6 @@
-![Fishermen on a Log Raft](https://github.com/pepijnkokke/LogStreamer/raw/master/logo.jpg)
-
 # Distributed Systems – LogStreamer 1.0
+
+![Fishermen on a Log Raft](https://github.com/pepijnkokke/LogStreamer/raw/master/logo.jpg)
 
 ### If you are just browsing this repository...
 
